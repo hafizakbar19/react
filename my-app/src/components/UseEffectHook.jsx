@@ -6,7 +6,7 @@ const UseEffectHook = () => {
 
   useEffect(() => {
     console.log(count, "\t", data);
-  }, [count]);
+  },[count,data]);
 
   return (
     <>
