@@ -1,20 +1,32 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from "react";
 
-const DigitalClock = () => {
-    let [color,setColor] = useState("");
+const DigitalClock = ({ tColor, bgColor }) => {
+  let [time, setTime] = useState(new Date());
+  useEffect(() => {
+    const intervalId = setTimeout(() => {
+      setTime(new Date());
+    }, 1000);
+    return () => clearInterval(intervalId);
+  });
   return (
     <>
-    <h1>Digital clock</h1>
-    <select value={color} onChange={e => setColor(e.target.value)}>
-        <option value="">Select a color</option>
-        <option value="green">Green</option>
-        <option value="black">Black</option>
-        <option value="red">Red</option>
-        <option value="blue">Blue</option>
-    </select>
-    <div style={{ color: color }}>{color}</div>
+      <h1
+        style={{
+          color: tColor,
+          backgroundColor: bgColor,
+          width: "250px",
+          height: "80px",
+          borderRadius: "10px",
+          padding: "10px",
+          textAlign: "center",
+        }}
+      >
+        {time.toLocaleTimeString()}
+      </h1>
     </>
-  )
-}
+  );
+};
+35686179
+35644381
 
-export default DigitalClock
+export default DigitalClock;
