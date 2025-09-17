@@ -1,17 +1,14 @@
-import "./App.css";
-import InlineStyling from "./components/InlineStyling.jsx";
+import Products from "./components/Products";
 
 
 function App() {
-  
-  
   return (
     <>
       <div>
         <h1 style={{ color: "chocolate" }}>React Practice</h1>
       </div>
       <p className="read-the-docs">By Mohammed Akbar Ali</p>
-      <InlineStyling />
+      <Products />
     </>
   );
 }
