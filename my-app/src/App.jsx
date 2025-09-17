@@ -1,4 +1,4 @@
-import Products from "./components/Products";
+import Students from './components/Students.jsx';
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
         <h1 style={{ color: "chocolate" }}>React Practice</h1>
       </div>
       <p className="read-the-docs">By Mohammed Akbar Ali</p>
-      <Products />
+      <Students />
     </>
   );
 }
