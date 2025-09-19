@@ -5,16 +5,20 @@
 // }
 // console.log("=================");
 
-const num = document.getElementById('num');
-const tableButton = document.getElementById('table-button');
+// let name = prompt("Enter a string");
+// let strSize = 0;
+// for (const letters of name) {
+//     console.log(letters)
+//     strSize ++;
+// }
+// console.log(strSize)
 
-const showTable = ()=>{
-    const parentDiv = document.createElement('div');
-    const para = document.createElement('p');
-    para.innerHTML = "Hello testing";
-    parentDiv.appendChild(para);
-    // Optionally, append parentDiv to the document
-    document.body.appendChild(parentDiv);
+const person = {
+    name: "Akbar",
+    age: 35,
+    city: "Karachi"
 }
 
-tableButton.addEventListener('click', showTable);
+for(let detail in person){
+    console.log(detail, ":" , person[detail])
+}
