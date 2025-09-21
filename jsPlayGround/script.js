@@ -1,3 +1,11 @@
+console.dir(document.body)
+document.body.childNodes[3].innerText = "ja k change over kro text from js";
+document.body.children[1].innerText = "no"
+document.body.childNodes[1].style.background = "yellow"
+const h1 = document.querySelector('h1');
+console.dir(h1)
+
+
 // let sum = 13;
 // for (let i =1; i <= 10; i++){
 
@@ -71,11 +79,33 @@
 // console.log(count);
 
 
-let fruits = ["Apple", "Banana", "Mango", "Orange"];
-console.log(fruits)
-
-// let spliced = fruits.splice(2,1,"Cherry");
+// let fruits = ["Apple", "Banana", "Mango", "Orange"];
 // console.log(fruits)
 
-let myStr = "Akbar Ali"
+// // let spliced = fruits.splice(2,1,"Cherry");
+// // console.log(fruits)
 
+// let myStr = "Akbar Ali"
+
+
+// const findBigger = (a,b)=>{
+//     if(a>b){
+//         return `${a} is bigger`;
+//     }else{
+//         return `${b} is bigger`
+//     }
+// }
+
+// console.log(findBigger(20,15))
+
+// const isEven = (num) => {
+//     if(num % 2 == 0){
+//         return true;
+//     }else{
+//         return false;
+//     }
+// };
+
+// console.log(isEven(40))
+
+// fruits.forEach((item)=> console.log(item + "s"))
