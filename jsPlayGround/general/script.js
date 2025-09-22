@@ -109,3 +109,37 @@ console.dir(h1)
 // console.log(isEven(40))
 
 // fruits.forEach((item)=> console.log(item + "s"))
+
+// let h4 = document.querySelector('h4');
+
+// h4.onmouseover = (e)=>{
+//     console.log(e.target);
+//     console.log(e.type);
+//     console.log(e.clientX, e.clientY);
+// }
+
+const div = document.querySelector('#general');
+let btn = document.querySelector('#btn');
+
+const themeChanger = ()=>{
+    if(btn.innerText != "light"){
+        div.style.background = 'black';
+        btn.innerText = "light";
+    }else{
+        div.style.background = "white";
+        btn.innerText = "Dark"
+    }
+}
+
+let face = document.querySelector('#faces')
+
+let faceChanger = ()=>{
+    face.innerText = "😊";
+    console.log("im here")
+}
+let changeBack = ()=>{
+    face.innerHTML = "😒"
+}
+face.addEventListener('mouseover',faceChanger);
+face.addEventListener('mouseout',changeBack);
+btn.addEventListener("click",themeChanger)
