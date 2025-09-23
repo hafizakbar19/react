@@ -34,3 +34,4 @@ let reduced = products.reduce((sum, item) => {
 }, 0);
 
 console.log(reduced)
+
