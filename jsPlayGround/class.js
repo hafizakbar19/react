@@ -12,4 +12,12 @@ class Employee {
 };
 
 const ziarat = new Employee("Ziarat",43,"Karachi",26000);
-ziarat.infoSummary()
+ziarat.infoSummary();
+
+class Servant extends Employee {
+
+};
+
+let noor = new Servant("Noor", 42, "Lahore", 50000);
+
+noor.infoSummary();
