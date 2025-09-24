@@ -14,10 +14,15 @@ class Employee {
 const ziarat = new Employee("Ziarat",43,"Karachi",26000);
 ziarat.infoSummary();
 
+//inheritance
 class Servant extends Employee {
-
+    constructor(name,age,city,salary){
+        super(name,age,city,salary)
+    }
 };
 
 let noor = new Servant("Noor", 42, "Lahore", 50000);
 
 noor.infoSummary();
+
+//super keyword
